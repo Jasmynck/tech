@@ -1,142 +1,151 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Estilos básicos para o corpo e elementos principais */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #FFFF00; /* Substituído por um cinza claro para contraste com o laranja */
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff4500; /* Cor de fundo laranja mais chamativo */
-    color: white;
-    padding: 15px 20px; /* Aumentado o padding para mais espaço */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionada sombra para profundidade */
+    padding: 10px 20px;
+    background-color: #f8a100;
+    border-bottom: 1px solid rgb(182, 184, 94);
 }
 
 .logo img {
-    width: 100px;
+    max-width: 100%;
+    height: auto;
 }
 
 .search-bar input {
-    padding: 10px;
-    width: 300px;
-    border-radius: 25px;
-    border: 1px solid #ff4500; /* Adicionada borda laranja */
-    outline: none;
-    transition: border-color 0.3s ease; /* Adicionada transição para efeito de foco */
-}
-
-.search-bar input:focus {
-    border-color: #ff6347; /* Cor da borda ao focar no input */
+    padding: 8px;
+    border: 1px solid #da0202;
+    border-radius: 4px;
+    width: 250px;
 }
 
 .user-options .login-btn {
-    background-color: white;
-    color: #ff4500;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: none;
-    border-radius: 25px;
+    border-radius: 4px;
+    background-color: #df5543;
+    color: rgb(241, 237, 237);
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Adicionada transição para efeito de hover */
 }
 
-.user-options .login-btn:hover {
-    background-color: #ff6347; /* Cor do botão ao passar o mouse */
-    color: white;
+nav.main-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #b92106d5;
+    padding: 10px 0;
+}
+
+nav.main-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav.main-menu a:hover {
+    background-color: #a1822cd3;
+    border-radius: 4px;
 }
 
 .hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: white;
     text-align: center;
-    padding: 80px 20px; /* Aumentado o padding para mais impacto */
-    background-blur: 5px; /* Adicionada uma leve desfocagem no fundo */
+    padding: 40px 20px;
+    background-color: #f7c88b;
 }
 
 .hero h1 {
     margin-bottom: 20px;
-    font-size: 3.5rem; /* Aumentado o tamanho da fonte para mais impacto */
-    font-weight: bold;
-    background: linear-gradient(135deg, #ff4500, #ff6347); /* Gradiente laranja para destaque */
-    -webkit-background-clip: text; /* Aplicar gradiente apenas ao texto */
-    -webkit-text-fill-color: transparent; /* Deixar o texto transparente para gradiente */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra para aumentar a legibilidade */
 }
 
 .hero input {
-    padding: 15px;
-    width: 60%;
-    max-width: 500px; /* Aumentado o tamanho máximo */
-    border-radius: 25px;
-    border: 1px solid white; /* Borda branca para contraste */
-    margin-bottom: 20px;
-    outline: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 250px;
 }
 
 .btn-primary {
-    padding: 15px 25px;
-    background-color: #ff4500;
-    color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 25px;
+    border-radius: 4px;
+    background-color: #ca2c10;
+    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Adicionada transição para efeito de hover */
-}
-
-.btn-primary:hover {
-    background-color: #ff6347; /* Cor do botão ao passar o mouse */
+    margin-left: 10px;
 }
 
 .restaurants {
-    padding: 30px 20px; /* Aumentado o padding para mais espaço */
-    background-color: white; /* Cor de fundo para contraste */
+    padding: 20px;
 }
 
 .restaurants h2 {
+    text-align: center;
     margin-bottom: 20px;
-    font-size: 2rem; /* Aumentado o tamanho da fonte */
-    text-align: center; /* Centralizado o título */
-    color: #ff4500; /* Cor do título para chamar atenção */
 }
 
 .restaurant-list {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .restaurant-item {
-    width: 220px; /* Ajustado para mais espaço */
-    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
     text-align: center;
-    background-color: #fafafa; /* Cor de fundo leve para cada item */
-    border: 1px solid #ddd; /* Borda leve */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionada sombra para profundidade */
-    transition: transform 0.3s ease; /* Adicionada transição para efeito de hover */
-}
-
-.restaurant-item:hover {
-    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+    width: 200px;
+    background-color: #fff;
 }
 
 .restaurant-item img {
-    width: 100%;
-    border-radius: 10px 10px 0 0; /* Bordas arredondadas apenas no topo */
-    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.contact, .about {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.contact h2, .about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact p, .about p {
+    text-align: center;
+    margin: 10px 0;
 }
 
 footer {
-    background-color: #ff4500; /* Cor de fundo laranja mais chamativo */
-    color: white;
+    padding: 20px;
+    background-color: #f8a100;
+    border-top: 1px solid #ddd;
     text-align: center;
-    padding: 15px 20px; /* Aumentado o padding para mais espaço */
-    margin-top: 20px;
+}
+
+.footer-info a {
+    display: block;
+    margin-bottom: 10px;
+    color: hsl(19, 60%, 30%);
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+.footer-info p {
+    margin: 5px 0;
 }
